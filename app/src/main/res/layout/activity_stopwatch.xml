@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout_stopwatch"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StopwatchActivity"
+    android:background="#6B96E5">
+
+    <!--
+        android:fadeScrollbars="false" : 스크롤이 움직일때만 표시되게하는 함수
+        android:scrollbars="none" : 스크롤을 보이게 하는 방법 (vertical , horizontal, none)
+    -->
+    <HorizontalScrollView
+        android:id="@+id/scrollView_stopwatch"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_scrolltest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="1"
+                />
+
+            <Button
+                android:id="@+id/btn_scrolltest2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="2"
+                />
+
+            <Button
+                android:id="@+id/btn_scrolltest3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_scrolltest4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_scrolltest5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_scrolltest6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="6"
+                />
+
+            <Button
+                android:id="@+id/btn_scrolltest7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="testscroll"
+                android:text="7"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_testscrollBtn"
+        android:layout_below="@+id/scrollView_stopwatch"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:textSize="50sp"
+        android:layout_marginTop="80dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_startandstop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_timer">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginBottom="10dp"
+            android:onClick="clickBtn"
+            android:layout_centerInParent="true"
+            />
+
+        <Button
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="잠시쉬기"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:onClick="clickBtn"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="clickBtn"
+        android:layout_below="@+id/layout_startandstop"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공부 끝내기"
+        android:textColor="#FFFFFF"
+        android:onClick="clickBtn"
+        android:background="#77AFC2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+
+    <!--
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    -->
+
+</RelativeLayout>

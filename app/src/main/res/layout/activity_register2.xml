@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Register2Activity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/line_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="학교"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/et_school"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line_school">
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="학년"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/et_grade"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_major"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line_grade">
+
+        <TextView
+            android:id="@+id/tv_major"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="계열"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/et_major"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:text="공부하러가기"
+        />
+
+</RelativeLayout>
